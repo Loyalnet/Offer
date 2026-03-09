@@ -3,43 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE PROTOCOL | Secure Access Node</title>
-    <style>
-        /* THE PROFESSIONAL FONT STACK */
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; margin: 0; background: #fafafa; color: #111; line-height: 1.6; }
-        .top-bar { background: #000; height: 5px; width: 100%; }
-        .container { max-width: 550px; margin: 0 auto; padding: 40px 20px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); min-height: 100vh; }
-        
-        /* THE AUTHORITY HEADER */
-        .badge { display: inline-block; padding: 5px 12px; background: #fff1f0; color: #d32f2f; font-weight: 800; font-size: 0.7rem; border-radius: 50px; text-transform: uppercase; margin-bottom: 20px; border: 1px solid #ffccc7; }
-        h1 { font-size: 2.4rem; font-weight: 900; line-height: 1.1; letter-spacing: -1.5px; color: #000; margin: 0; }
-        .sub-head { color: #666; font-size: 1.1rem; margin-top: 15px; border-left: 3px solid #eee; padding-left: 15px; }
+    <meta name="referrer" content="no-referrer">
+    <title>THE SOVEREIGN PROTOCOL | High-Stakes Resilience</title>
+    
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID_HERE'); fbq('track', 'PageView');
+    </script>
 
-        /* THE CLICKFUNNEL "FLOW" BOX */
-        .offer-box { background: #fdfdfd; border: 1.5px solid #eee; border-radius: 12px; padding: 25px; margin: 40px 0; }
-        .check { color: #d32f2f; font-weight: 900; margin-right: 10px; }
-        
-        /* THE "HIGH-TICKET" BUTTON */
-        .cta { display: block; background: #000; color: #fff; text-align: center; padding: 22px; text-decoration: none; font-weight: 800; font-size: 1.3rem; border-radius: 8px; margin-top: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); transition: 0.2s; }
-        .cta:active { transform: translateY(2px); box-shadow: none; }
+    <style>
+        :root {
+            --deep-blue: #0a192f; [span_6](start_span)[span_7](start_span)/* Executive Authority[span_6](end_span)[span_7](end_span) */
+            --gold: #d4af37;      [span_8](start_span)[span_9](start_span)/* Timeless Value[span_8](end_span)[span_9](end_span) */
+            --red: #d32f2f;       [span_10](start_span)/* Crisis Signal[span_10](end_span) */
+            --white: #ffffff;
+            --soft-bg: #fafafa;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif; [span_11](start_span)/* Authority typography[span_11](end_span) */
+            background-color: var(--soft-bg);
+            color: #111;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        [span_12](start_span)/* Layer 1: The Progress Nerve[span_12](end_span) */
+        .progress-nerve {
+            background: #eee;
+            height: 6px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        .progress-fill {
+            background: var(--red);
+            height: 100%;
+            width: 88%; 
+        }
+
+        [span_13](start_span)[span_14](start_span)/* Layer 2: The Dark Altar (Header)[span_13](end_span)[span_14](end_span) */
+        header {
+            background: var(--deep-blue);
+            color: var(--white);
+            padding: 80px 20px 120px;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        [span_15](start_span)/* Layer 3: The Content Fortress (Overlap Hack)[span_15](end_span) */
+        .container {
+            max-width: 600px;
+            margin: -60px auto 60px;
+            background: var(--white);
+            padding: 50px 40px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        .crisis-alert {
+            border-left: 4px solid var(--red);
+            background: #fff5f5;
+            padding: 25px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #851d1d;
+        }
+
+        [span_16](start_span)[span_17](start_span)[span_18](start_span)/* Layer 4: Tactical Benefits[span_16](end_span)[span_17](end_span)[span_18](end_span) */
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+            font-family: 'Open Sans', sans-serif; [span_19](start_span)/* Clarity for body[span_19](end_span) */
+        }
+
+        .check-icon {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        [span_20](start_span)/* Layer 5: The High-Ticket Altar[span_20](end_span) */
+        .cta-box {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .price-tag {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .btn-sovereign {
+            display: block;
+            background: var(--deep-blue);
+            color: var(--white);
+            text-decoration: none;
+            padding: 25px;
+            font-size: 1.4rem;
+            font-weight: 900;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 30px rgba(10, 25, 47, 0.2);
+        }
+
+        .btn-sovereign:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.7rem;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
-    <div class="top-bar"></div>
-    <div class="container">
-        <span class="badge">Node 0x7a2: Secure Access</span>
-        <h1>[YOUR HOOK: THE RAW TRUTH]</h1>
-        <p class="sub-head">The blueprint for survival, execution, and the cold reality of results.</p>
 
-        <div class="offer-box">
-            <p><strong>Inside the Protocol:</strong></p>
-            <p><span class="check">✓</span> [Direct Benefit 1]</p>
-            <p><span class="check">✓</span> [Direct Benefit 2]</p>
-            <p><span class="check">✓</span> [No Fluff, No Metaphors]</p>
+    <div class="progress-nerve"><div class="progress-fill"></div></div>
+
+    <header>
+        <span class="badge">Node 0x7A2: High-Stakes Access</span>
+        <h1>COMMAND THE CHAOS.</h1>
+    </header>
+
+    <div class="container">
+        <div class="crisis-alert">
+            ARE YOU EXPOSED? [span_21](start_span)[span_22](start_span)Traditional approaches fail in today's volatile landscape[span_21](end_span)[span_22](end_span). [span_23](start_span)The question is no longer if, but when[span_23](end_span).
         </div>
 
-        <a href="[YOUR_PAYSTACK_LINK]" class="cta">GET THE PROTOCOL NOW</a>
-        <p style="text-align:center; font-size:0.7rem; color:#999; margin-top:20px;">🔒 VERIFIED SECURE BY PAYSTACK & CLOUDFLARE</p>
+        [span_24](start_span)<p>The modern enterprise stands on an unseen battlefield[span_24](end_span). [span_25](start_span)[span_26](start_span)Xenophon's Anabasis revealed the raw, battle-tested blueprints for surviving the impossible[span_25](end_span)[span_26](end_span). [span_27](start_span)This is the Sovereign Protocol[span_27](end_span).</p>
+
+        <div style="margin: 40px 0;">
+            <div class="benefit-item">
+                <span class="check-icon">✓</span>
+                [span_28](start_span)[span_29](start_span)<div><strong>Decisive Leadership:</strong> Restore morale and initiate proactive measures during profound threats[span_28](end_span)[span_29](end_span).</div>
+            </div>
+            <div class="benefit-item">
+                <span class="check-icon">✓</span>
+                [span_30](start_span)[span_31](start_span)<div><strong>Adaptive Formations:</strong> Reconfigure your organization instantly under duress to protect core assets[span_30](end_span)[span_31](end_span).</div>
+            </div>
+            <div class="benefit-item">
+                <span class="check-icon">✓</span>
+                [span_32](start_span)[span_33](start_span)<div><strong>Strategic Foresight:</strong> Intelligence-gathering protocols to see beyond the horizon[span_32](end_span)[span_33](end_span).</div>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <div class="price-tag">₦29,999</div>
+            <a href="[YOUR_PAYSTACK_LINK]" onclick="fbq('track', 'InitiateCheckout');" class="btn-sovereign">SECURE THE PROTOCOL</a>
+            [span_34](start_span)<p style="font-size: 0.75rem; color: #999; margin-top: 20px;">🔒 STRATEGIC INVESTMENT IN ORGANIZATIONAL FORTITUDE[span_34](end_span)</p>
+        </div>
     </div>
+
+    <footer>
+        Verified Ancient Wisdom | Lead Historian Node
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>THE SOVEREIGN PROTOCOL | High-Stakes Resilience</title>
+    
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID_HERE'); fbq('track', 'PageView');
+    </script>
+
+    <style>
+        :root {
+            --deep-blue: #0a192f; [span_6](start_span)[span_7](start_span)/* Executive Authority[span_6](end_span)[span_7](end_span) */
+            --gold: #d4af37;      [span_8](start_span)[span_9](start_span)/* Timeless Value[span_8](end_span)[span_9](end_span) */
+            --red: #d32f2f;       [span_10](start_span)/* Crisis Signal[span_10](end_span) */
+            --white: #ffffff;
+            --soft-bg: #fafafa;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif; [span_11](start_span)/* Authority typography[span_11](end_span) */
+            background-color: var(--soft-bg);
+            color: #111;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        [span_12](start_span)/* Layer 1: The Progress Nerve[span_12](end_span) */
+        .progress-nerve {
+            background: #eee;
+            height: 6px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        .progress-fill {
+            background: var(--red);
+            height: 100%;
+            width: 88%; 
+        }
+
+        [span_13](start_span)[span_14](start_span)/* Layer 2: The Dark Altar (Header)[span_13](end_span)[span_14](end_span) */
+        header {
+            background: var(--deep-blue);
+            color: var(--white);
+            padding: 80px 20px 120px;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            border: 1px solid var(--gold);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        [span_15](start_span)/* Layer 3: The Content Fortress (Overlap Hack)[span_15](end_span) */
+        .container {
+            max-width: 600px;
+            margin: -60px auto 60px;
+            background: var(--white);
+            padding: 50px 40px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        .crisis-alert {
+            border-left: 4px solid var(--red);
+            background: #fff5f5;
+            padding: 25px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #851d1d;
+        }
+
+        [span_16](start_span)[span_17](start_span)[span_18](start_span)/* Layer 4: Tactical Benefits[span_16](end_span)[span_17](end_span)[span_18](end_span) */
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+            font-family: 'Open Sans', sans-serif; [span_19](start_span)/* Clarity for body[span_19](end_span) */
+        }
+
+        .check-icon {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        [span_20](start_span)/* Layer 5: The High-Ticket Altar[span_20](end_span) */
+        .cta-box {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .price-tag {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .btn-sovereign {
+            display: block;
+            background: var(--deep-blue);
+            color: var(--white);
+            text-decoration: none;
+            padding: 25px;
+            font-size: 1.4rem;
+            font-weight: 900;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 30px rgba(10, 25, 47, 0.2);
+        }
+
+        .btn-sovereign:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.7rem;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="progress-nerve"><div class="progress-fill"></div></div>
+
+    <header>
+        <span class="badge">Node 0x7A2: High-Stakes Access</span>
+        <h1>COMMAND THE CHAOS.</h1>
+    </header>
+
+    <div class="container">
+        <div class="crisis-alert">
+            ARE YOU EXPOSED? [span_21](start_span)[span_22](start_span)Traditional approaches fail in today's volatile landscape[span_21](end_span)[span_22](end_span). [span_23](start_span)The question is no longer if, but when[span_23](end_span).
+        </div>
+
+        [span_24](start_span)<p>The modern enterprise stands on an unseen battlefield[span_24](end_span). [span_25](start_span)[span_26](start_span)Xenophon's Anabasis revealed the raw, battle-tested blueprints for surviving the impossible[span_25](end_span)[span_26](end_span). [span_27](start_span)This is the Sovereign Protocol[span_27](end_span).</p>
+
+        <div style="margin: 40px 0;">
+            <div class="benefit-item">
+                <span class="check-icon">✓</span>
+                [span_28](start_span)[span_29](start_span)<div><strong>Decisive Leadership:</strong> Restore morale and initiate proactive measures during profound threats[span_28](end_span)[span_29](end_span).</div>
+            </div>
+            <div class="benefit-item">
+                <span class="check-icon">✓</span>
+                [span_30](start_span)[span_31](start_span)<div><strong>Adaptive Formations:</strong> Reconfigure your organization instantly under duress to protect core assets[span_30](end_span)[span_31](end_span).</div>
+            </div>
+            <div class="benefit-item">
+                <span class="check-icon">✓</span>
+                [span_32](start_span)[span_33](start_span)<div><strong>Strategic Foresight:</strong> Intelligence-gathering protocols to see beyond the horizon[span_32](end_span)[span_33](end_span).</div>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <div class="price-tag">₦29,999</div>
+            <a href="[YOUR_PAYSTACK_LINK]" onclick="fbq('track', 'InitiateCheckout');" class="btn-sovereign">SECURE THE PROTOCOL</a>
+            [span_34](start_span)<p style="font-size: 0.75rem; color: #999; margin-top: 20px;">🔒 STRATEGIC INVESTMENT IN ORGANIZATIONAL FORTITUDE[span_34](end_span)</p>
+        </div>
+    </div>
+
+    <footer>
+        Verified Ancient Wisdom | Lead Historian Node
+    </footer>
+
 </body>
 </html>
