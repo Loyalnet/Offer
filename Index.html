@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE SOVEREIGN PROTOCOL | Executive Authority</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>THE SOVEREIGN PROTOCOL | Secure Access Node</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --deep-blue: #0a192f; /* Premium Dark Palette */
-            --gold: #d4af37;      /* Ancient Authority */
-            --red: #d32f2f;       /* Crisis Alert */
-            --white: #ffffff;
-            --text-gray: #4a4a4a;
+            --deep-blue: #0a192f; 
+            --gold: #d4af37;      
+            --blood-red: #8b0000;
+            --off-white: #f8f9fa;
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa;
+            background-color: var(--off-white);
             color: var(--deep-blue);
             margin: 0;
             line-height: 1.6;
         }
 
-        /* The Progress Nerve - ClickFunnels System Excellence */
+        /* The Progress Nerve - System Excellence */
         .progress-nerve {
             background: #e0e0e0;
             height: 5px;
@@ -32,7 +31,7 @@
             z-index: 1000;
         }
         .progress-fill {
-            background: var(--red);
+            background: var(--blood-red);
             height: 100%;
             width: 85%;
         }
@@ -40,8 +39,8 @@
         /* The Dark Altar (Header) */
         header {
             background: var(--deep-blue);
-            color: var(--white);
-            padding: 80px 20px 120px;
+            color: #fff;
+            padding: 80px 20px 140px;
             text-align: center;
             border-bottom: 5px solid var(--gold);
         }
@@ -49,112 +48,94 @@
         .badge {
             display: inline-block;
             padding: 8px 16px;
-            background: rgba(212, 175, 55, 0.15);
+            background: rgba(212, 175, 55, 0.1);
             color: var(--gold);
             border: 1px solid var(--gold);
             font-size: 0.7rem;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            border-radius: 3px;
+            border-radius: 2px;
             margin-bottom: 25px;
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 900;
-            line-height: 1.1;
+            line-height: 1;
             margin: 0;
-            letter-spacing: -1px;
+            letter-spacing: -1.5px;
         }
 
-        /* The Content Fortress - Corrected Alignment */
+        /* The Content Fortress */
         .container {
             max-width: 550px;
-            margin: -60px auto 60px; /* Overlap Hack for Premium Look */
-            background: var(--white);
+            margin: -80px auto 60px;
+            background: #fff;
             padding: 40px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.1);
-            border-radius: 5px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+            border-radius: 4px;
         }
 
-        .crisis-alert {
-            border-left: 4px solid var(--red);
-            background: #fff8f8;
-            padding: 20px;
+        .alert-box {
+            border-left: 4px solid var(--blood-red);
+            background: #fffafa;
+            padding: 25px;
             margin-bottom: 30px;
             font-weight: 700;
-            font-size: 1rem;
-            color: #851d1d;
+            color: var(--blood-red);
         }
 
-        .raw-truth {
-            font-size: 1.1rem;
-            color: var(--text-gray);
-            margin-bottom: 30px;
-        }
-
-        /* Tactical Checkpoints */
-        .checkpoint {
+        /* The Meat: Human-to-Human Value */
+        .tactical-node {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #f1f1f1;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
         }
 
-        .gold-check {
+        .gold-marker {
             color: var(--gold);
-            font-size: 1.3rem;
-            margin-right: 15px;
+            font-size: 1.4rem;
+            margin-right: 18px;
             font-weight: bold;
         }
 
-        .checkpoint-text strong {
-            display: block;
-            color: var(--deep-blue);
-            font-size: 1rem;
-        }
+        h3 { font-size: 1.1rem; margin: 0 0 5px; color: #000; }
+        p { margin: 0; font-size: 1rem; color: #444; }
 
-        /* The Altar (Button) */
+        /* The Price of Inaction (Button) */
         .cta-box {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 50px;
         }
 
-        .price-label {
-            font-size: 2.2rem;
+        .price {
+            font-size: 2.4rem;
             font-weight: 900;
-            color: #111;
+            color: #000;
             margin-bottom: 15px;
         }
 
-        .btn-sovereign {
+        .btn-trade {
             display: block;
             background: var(--deep-blue);
-            color: var(--white);
+            color: #fff;
             text-decoration: none;
-            padding: 22px;
+            padding: 24px;
             font-size: 1.3rem;
-            font-weight: 700;
+            font-weight: 800;
             border-radius: 4px;
             transition: 0.3s ease;
-            box-shadow: 0 10px 20px rgba(10, 25, 47, 0.2);
+            box-shadow: 0 15px 30px rgba(10, 25, 47, 0.2);
             text-transform: uppercase;
         }
 
-        .btn-sovereign:active {
-            transform: scale(0.98);
-        }
+        .btn-trade:active { transform: scale(0.98); }
 
-        footer {
-            text-align: center;
-            font-size: 0.7rem;
-            color: #bbb;
-            margin-bottom: 50px;
-            letter-spacing: 1px;
-        }
+        footer { text-align: center; font-size: 0.65rem; color: #aaa; margin-bottom: 40px; letter-spacing: 1px; }
     </style>
 </head>
 <body>
@@ -162,52 +143,55 @@
     <div class="progress-nerve"><div class="progress-fill"></div></div>
 
     <header>
-        <span class="badge">Sovereign Protocol: Node 0x7A2</span>
+        <span class="badge">Sovereign Protocol | Executive Node</span>
         <h1>COMMAND THE CHAOS.</h1>
     </header>
 
     <div class="container">
-        <div class="crisis-alert">
-            [span_6](start_span)ARE YOU EXPOSED?[span_6](end_span) [span_7](start_span)Traditional approaches fail in today's volatile landscape.[span_7](end_span) [span_8](start_span)The question is no longer if, but when.[span_8](end_span)
+        <div class="alert-box">
+            YOUR ORGANIZATION IS EXPOSED. 
+            Traditional resilience is a myth. Paralysis is the only predator that kills a kingdom from within.
         </div>
 
-        [span_9](start_span)<p class="raw-truth">Xenophon's Anabasis revealed the raw, battle-tested blueprints for surviving the impossible.[span_9](end_span) [span_10](start_span)This is the Sovereign Protocol for the 21st-century leader.[span_10](end_span)</p>
+        <p style="font-size: 1.1rem; margin-bottom: 40px;">
+            History has already provided the blueprints for navigating the impossible. We have distilled 5 ancient survival truths into a single tactical shield for the 21st-century leader.
+        </p>
 
-        <div class="checkpoint">
-            <span class="gold-check">✓</span>
-            <div class="checkpoint-text">
-                <strong>Decisive Leadership</strong>
-                [span_11](start_span)Restore morale and initiate proactive measures during profound threats.[span_11](end_span)
+        <div class="tactical-node">
+            <span class="gold-marker">✓</span>
+            <div>
+                <h3>DECISIVE LEADERSHIP</h3>
+                <p>Cut through uncertainty. Restore morale. Initiate proactive measures while others are still debating.</p>
             </div>
         </div>
 
-        <div class="checkpoint">
-            <span class="gold-check">✓</span>
-            <div class="checkpoint-text">
-                <strong>Adaptive Formations</strong>
-                [span_12](start_span)Reconfigure your organization instantly under duress to protect core assets.[span_12](end_span)
+        <div class="tactical-node">
+            <span class="gold-marker">✓</span>
+            <div>
+                <h3>ADAPTIVE FORMATIONS</h3>
+                <p>Reconfigure your structure instantly to protect your most vulnerable assets when the market shifts.</p>
             </div>
         </div>
 
-        <div class="checkpoint">
-            <span class="gold-check">✓</span>
-            <div class="checkpoint-text">
-                <strong>Strategic Foresight</strong>
-                [span_13](start_span)[span_14](start_span)Predictive power through intelligence to see beyond the horizon.[span_13](end_span)[span_14](end_span)
+        <div class="tactical-node">
+            <span class="gold-marker">✓</span>
+            <div>
+                <h3>STRATEGIC FORESIGHT</h3>
+                <p>Build a predictive intelligence nerve to see beyond the horizon and mitigate threats before they strike.</p>
             </div>
         </div>
 
         <div class="cta-box">
-            <div class="price-label">₦29,999</div>
-            <a href="#" class="btn-sovereign">SECURE THE PROTOCOL</a>
-            <p style="font-size: 0.7rem; color: #999; margin-top: 20px; font-weight: bold;">
-                [span_15](start_span)[span_16](start_span)🔒 STRATEGIC INVESTMENT IN ORGANIZATIONAL FORTITUDE[span_15](end_span)[span_16](end_span)
+            <div class="price">₦29,999</div>
+            <a href="[YOUR_PAYSTACK_LINK]" class="btn-trade">SECURE THE PROTOCOL</a>
+            <p style="font-size: 0.7rem; color: #999; margin-top: 25px; font-weight: bold;">
+                🔒 FRACTIONAL INVESTMENT COMPARED TO THE COST OF COLLAPSE.
             </p>
         </div>
     </div>
 
     <footer>
-        VERIFIED ANCIENT WISDOM | [span_17](start_span)LEAD HISTORIAN NODE[span_17](end_span)
+        VERIFIED ANCIENT WISDOM | LEAD HISTORIAN NODE
     </footer>
 
 </body>
